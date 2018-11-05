@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <p>{{ clickedButton | default('none') }} clicked</p>
+
+    {{ form(form, {'attr': {'novalidate': 'novalidate'}}) }}
+{% endblock %}
